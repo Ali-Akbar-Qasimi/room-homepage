@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.container .hero {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .hero .hero-top {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+}
+
+.container .hero .hero-top .hero-image {
+  height: 100%;
+}
+
+.container .hero .hero-top .hero-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
+}
+
+.container .hero .hero-top nav {
+  padding: 30px 20px;
+  width: 100%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .hero .hero-top nav .overlay {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 225vh;
+  z-index: 8;
+  background-color: rgba(0, 0, 0, 0.351);
+}
+
+.container .hero .hero-top nav .logo {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.container .hero .hero-top nav .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 9;
+  position: absolute;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 100px;
+  gap: 20px;
+  background-color: white;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding-left: 100px;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: -webkit-transform 200ms ease-in-out;
+  transition: -webkit-transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+  padding-right: 100px;
+}
+
+.container .hero .hero-top nav .links li {
+  list-style: none;
+}
+
+.container .hero .hero-top nav .links li a {
+  text-decoration: none;
+  color: black;
+}
+
+.container .hero .hero-top nav .menu {
+  cursor: pointer;
+}
+
+.container .hero .hero-top nav .menu .burger {
+  display: block;
+}
+
+.container .hero .hero-top nav .menu .close {
+  display: none;
+}
+
+.container .hero .hero-top nav.show .overlay {
+  display: block;
+}
+
+.container .hero .hero-top nav.show .links {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.container .hero .hero-top nav.show .menu {
+  position: relative;
+}
+
+.container .hero .hero-top nav.show .menu .burger {
+  display: none;
+}
+
+.container .hero .hero-top nav.show .menu .close {
+  display: block;
+  position: absolute;
+  z-index: 10;
+}
+
+.container .hero .hero-top .navigators {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.container .hero .hero-top .navigators .arrow {
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+  cursor: pointer;
+  padding: 20px;
+  background-color: black;
+}
+
+.container .hero .hero-top .navigators .arrow img {
+  width: 15px;
+}
+
+.container .hero .hero-top .navigators .arrow:hover {
+  opacity: 0.5;
+}
+
+.container .hero .hero-top .navigators .left-arrow {
+  padding-right: 20px;
+}
+
+.container .hero .hero-top .navigators .right-arrow {
+  padding-left: 20px;
+}
+
+.container .hero-content {
+  padding: 50px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.container .hero-content .hero-header {
+  font-size: 3em;
+  font-weight: 600;
+}
+
+.container .hero-content .hero-body {
+  font-size: 22.5px;
+  color: #a1a1a1;
+  line-height: 25px;
+}
+
+.container .hero-content .hero-shop-now {
+  margin-top: 20px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  letter-spacing: 10px;
+  font-size: 18px;
+  font-weight: 6h00;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  word-spacing: 10px;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+}
+
+.container .hero-content .hero-shop-now:hover {
+  opacity: 0.5;
+}
+
+.main .upper-image,
+.main .lower-image {
+  width: 100%;
+}
+
+.main .upper-image img,
+.main .lower-image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main .main-content {
+  padding: 50px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.main .main-content .main-header {
+  text-transform: uppercase;
+  font-size: 23px;
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+
+.main .main-content .main-body {
+  font-size: 20px;
+  line-height: 25px;
+  color: #a1a1a1;
+}
+
+@media screen and (min-width: 900px) {
+  .container .hero {
+    width: 100%;
+    height: 65vh;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .container .hero .hero-top {
+    width: 60%;
+    height: 100%;
+  }
+  .container .hero .hero-top nav {
+    padding: 50px 30px;
+  }
+  .container .hero .hero-top nav .links {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    position: unset;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    left: 0;
+    top: 0;
+    background-color: transparent;
+  }
+  .container .hero .hero-top nav .links li {
+    position: relative;
+  }
+  .container .hero .hero-top nav .links li:hover::after {
+    content: '';
+    position: absolute;
+    left: 25%;
+    bottom: -50%;
+    width: 50%;
+    height: 3px;
+    background-color: white;
+  }
+  .container .hero .hero-top nav .links li a {
+    color: white;
+  }
+  .container .hero .hero-top nav .menu {
+    display: none;
+  }
+  .container .hero .hero-top nav .logo {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .container .hero .hero-top .hero-image img {
+    -o-object-position: center;
+       object-position: center;
+  }
+  .container .hero .hero-top .navigators {
+    left: 100%;
+  }
+  .container .hero .hero-content {
+    width: 40%;
+    padding: 80px 50px;
+  }
+  .container .hero .hero-content .hero-header {
+    font-size: 2.5em;
+  }
+  .container .hero .hero-content .hero-body {
+    font-size: 18px;
+  }
+  .container .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container .main .main-content {
+    width: 100%;
+  }
+  .container .main .upper-image,
+  .container .main .lower-image {
+    width: 80%;
+  }
+  .container .main .upper-image img,
+  .container .main .lower-image img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */
